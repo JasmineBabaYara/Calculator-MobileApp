@@ -4,7 +4,7 @@ import styles from "./style";
 
 export default function Sum() {
   const [input, setInput] = useState("");
-  const [inputarr, setInputArr] = useState([]);
+  const [inputarr, setInputArr] = useState("");
 
   const displayvalue = () => {
     // console.log(input)
@@ -12,7 +12,7 @@ export default function Sum() {
   };
 
   return (
-    <View>
+    <View style={{ margin: 100 }}>
       <TextInput
         onChangeText={(value) => setInput(value)}
         placeholder="type here"
@@ -21,7 +21,7 @@ export default function Sum() {
       <TouchableOpacity onPress={displayvalue}>
         <Text>calculate</Text>
       </TouchableOpacity>
-      <Text>{inputarr}</Text>
+      <Text>{eval(inputarr)}</Text>
     </View>
   );
 }
