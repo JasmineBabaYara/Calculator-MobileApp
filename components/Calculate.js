@@ -8,25 +8,11 @@ export default function Calculate() {
 
   const handleCharacter = (buttonValue) => {
     setInputArr((inputarr) => [...inputarr, buttonValue]);
-    console.log(inputarr);
-    //  push buttonValue to inputarr
-    // eg inputarr = []
-    // eg when 1 is clicked, push it to inputarr ["1"]
-    // eg when + is clicked, push it to inputarr ["1", "+"]
-    // eg when 2 is clicked, push it to inputarr ["1", "+", "2"]
-    // eg when + is clicked, push it to inputarr ["1", "+", "2", "+"]
-    // eg when 3 is clicked, push it to inputarr ["1", "+", "2", "+", "3"]
   };
 
   const getResult = () => {
-    // use inputarr.join("") to get "1+2+3" from ["1", "+", "2", "+", "3"]
     const combinedInput = inputarr.join("");
-    console.log(combinedInput);
-
-    // call eval on the string "1+2+3" to get the answer "6"
     setResult(eval(combinedInput));
-    console.log(result);
-    // now, render the answer
   };
 
   const clear = () => {
