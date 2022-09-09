@@ -35,7 +35,7 @@ export default function Sum() {
     switch (operation) {
       case "+":
           setResult(parseInt(secondNumber)+parseInt(firstNumber));
-          //setResult(eval(secondNumber+firstNumber));
+          // setResult(eval(secondNumber+firstNumber));
           // console.log(secondNumber)
           // console.log(firstNumber)
           break;
