@@ -1,10 +1,10 @@
 import { View } from 'react-native';
-import Sum from './components/Sum';
+import Calculate from './components/Calculate';
 
 export default function App() {
   return (
     <View>
-      <Sum />
+      <Calculate />
     </View>
   );
 }
