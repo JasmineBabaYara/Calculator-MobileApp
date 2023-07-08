@@ -12,15 +12,18 @@ export default function Calculate() {
   const [inputarr, setInputArr] = useState([]);
   const [result, setResult] = useState("");
 
+  //handle the button character clicked
   const handleCharacter = (buttonValue) => {
     setInputArr((inputarr) => [...inputarr, buttonValue]);
   };
 
+  //function to get results
   const getResult = () => {
     const combinedInput = inputarr.join("");
     setResult(eval(combinedInput));
   };
 
+  //function to clear input 
   const clear = () => {
     setInputArr([]);
     setResult("");
